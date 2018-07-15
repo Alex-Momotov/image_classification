@@ -24,6 +24,8 @@ The goal of our EDA is to visualise and explore class separability of reduced PC
 
 <img src="EDA/LDA_PCA_feature_space.PNG" width="372" height="340" />  <img src="EDA/frog_vs_truck.PNG" width="372" height="340" />
 
+<img src="EDA/LDA_PCA_feature_space.PNG" width="400" height="340" />  <img src="EDA/frog_vs_truck.PNG" width="400" height="340" />
+
 ## Clustering and Classification with K-means and GMM    
 K-means and Gaussian Mixture Modelling (GMM) are primarily intended as clustering algorithms, however, they can be used for classification, provided class centroid initialisation matches corresponding class categories. To accomplish this, we initialise our k-means class centroid coordinates from a supervised LDA classification model and set `guess' parameter of our GMM to the training labels. For our k-means options we choose 400 iterations and set k equal to 10. We plot class centroid coordinates together with colour coded classes using 3D scatter plot and compare it to the truth labelled classes. During our GMM clustering we intentionally prevent the model from converging by setting the maximum number of iterations to 1. This is equivalent to placing uniform Gaussian functions within known class centroids of our training data with 0.1 mixing coefficient for each class. We predict classes of our testing data using cluster() function, which assigns labels to the data unseen by the GMM.
 
