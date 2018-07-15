@@ -11,7 +11,7 @@
 ## How to Run    
 Clone the repository on your machine and be sure CW2Data.mat is in the same folder as the matlab scripts. Run matlab steps 1 to 8 in that order.
 
-![Alt text](EDA/img.PNG?raw=true "LDA_PCA_feature_space.PNG")
+![Alt text](EDA/LDA_PCA_feature_space.PNG?raw=true "LDA_PCA_feature_space.PNG")
 
 ## Introduction
 We are presented with a ten-class supervised classification problem of CIFAR-10 dataset images. Our training and testing data consists of 1000 and 100 samples respectively for each of the ten classes. The image data is stored in four-dimensional matrices where the first two dimensions represent image size (32x32), third dimension is the RGB colour channel and the last dimension indexes the data samples. Our proposed data mining pipeline starts with feature extraction using Histogram of Oriented Gradients (HOG) and dimensionality reduction with PCA and LDA. We implement and test three dimensionality reduction strategies of PCA-only, LDA-only and PCA combined with LDA. We proceed to exploratory data analysis of our reduced feature space with group scatter plot matrices, histograms and probability density functions. Our classification stage implements k-means, GMM, LDA, SVM, and NN with each of the dimensionality reduction strategies. We enable the use of k-means and GMM clustering algorithms for our classification task by initialising class centroids close to the corresponding true values extracted from a supervised LDA model. The highest accuracy reached with each of the classification algorithms can be summarised as: NN (52.3%), GMM (58.0%), k-means (61.5%), LDA (61.5%) and SVM (62.7%).
