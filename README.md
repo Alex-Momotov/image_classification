@@ -1,6 +1,6 @@
 # Image Classification with Support Vector Machine
 
-### Here I train Support Vector Machine, Linear Discriminant Analysis, and a four-layer feed forward neural net to classify 10 image categories from CIFAR-10 dataset achieving the highest accuracy with SVM at 62.7%. Key question of the experiment is to find if the non-traditional combination of PCA and LDA for dimensionality reduction outperforms LDA or PCA alone. In addition, I test if it is possible to use clustering methods (k-means and GMM) for classification, given supervised class centroid initialisation.
+#### Here I train Support Vector Machine, Linear Discriminant Analysis, and a four-layer feed forward neural net to classify 10 image categories from CIFAR-10 dataset achieving the highest accuracy with SVM at 62.7%. Key question of the experiment is to find if the non-traditional combination of PCA and LDA for dimensionality reduction outperforms LDA or PCA alone. In addition, I test if it is possible to use clustering methods (k-means and GMM) for classification, given supervised class centroid initialisation.
 
 ## Matlab Requirements:    
 - FDA LDA multiclass (version 1.7)
